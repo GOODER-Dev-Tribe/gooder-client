@@ -1,22 +1,18 @@
 import styled, { css, DefaultTheme } from 'styled-components'
 import { ButtonProps } from '.'
 
-type WrapperProps = { hasIcon: boolean } & Pick<
-  ButtonProps,
-  'size' | 'hasTooltip' | 'variation'
->
+type WrapperProps = Pick<ButtonProps, 'size' | 'hasTooltip' | 'variation'>
 
 const WrapperModifiers = {
   medium: (theme: DefaultTheme) => css`
     height: 3rem;
-    width: 8rem;
     font-size: ${theme.font.sizes.xsmall};
+    padding: ${theme.spacings.xxsmall} ${theme.spacings.small};
   `,
   large: (theme: DefaultTheme) => css`
     height: 4rem;
-    width: 32rem;
     font-size: ${theme.font.sizes.medium};
-    padding: ${theme.spacings.xxsmall} ${theme.spacings.medium};
+    padding: ${theme.spacings.xxsmall} ${theme.spacings.xxlarge};
   `,
   default: (theme: DefaultTheme) => css`
     background: ${theme.colors.primary};

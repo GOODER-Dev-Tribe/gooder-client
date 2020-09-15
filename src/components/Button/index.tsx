@@ -11,7 +11,6 @@ export type ButtonProps = {
 
 const Button = ({
   children,
-  icon,
   size = 'medium',
   variation = 'default',
   hasTooltip = false,
@@ -21,10 +20,8 @@ const Button = ({
     size={size}
     variation={variation}
     hasTooltip={hasTooltip}
-    hasIcon={!!icon}
     {...props}
   >
-    {!!icon && icon}
     {!!children && <span>{children}</span>}
   </S.Wrapper>
 )
