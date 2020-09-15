@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> should render a medium button by default 1`] = `
+.c0 {
+  background: #FF6435;
+  color: #fff;
+  border: 0;
+  border-radius: 2rem;
+  padding: 0.8rem;
+  cursor: pointer;
+  height: 3rem;
+  font-size: 1.2rem;
+  padding: 0.8rem 2.4rem;
+  background: #FF6435;
+  color: #fff;
+}
+
+<button
+  class="c0"
+>
+  <span>
+    Continuar
+  </span>
+</button>
+`;
