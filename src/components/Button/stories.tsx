@@ -7,14 +7,17 @@ export default {
   argTypes: {
     children: {
       type: 'string'
-    },
-    icon: {
-      type: ''
     }
   }
 } as Meta
 
-export const Default: Story = (args) => <Button {...args} />
+export const Default: Story = (args) => (
+  <div
+    style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+  >
+    <Button {...args} />
+  </div>
+)
 
 Default.args = {
   children: 'Continuar'
